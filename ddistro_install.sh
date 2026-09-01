@@ -15,7 +15,7 @@ source /home/dwemer/python-piper/bin/activate
 python -m pip install --no-cache-dir --upgrade pip setuptools wheel
 python -m pip install --no-cache-dir 'piper-tts[http]'
 
-./conf.sh
+bash ./conf.sh
 
 START_TARGET="$(readlink -f /home/dwemer/piper/start.sh)"
 if [ "$START_TARGET" = "/home/dwemer/piper/start-piper-gpu.sh" ]; then
